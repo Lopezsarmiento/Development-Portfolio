@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,37 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
 }
+
+.mapContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#socialMedia {
+  margin-bottom: 20px;
+}
+
+.bg-image {
+  background-image: url(../src/img/homeBground.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.jumbotron{
+  height: 100vh;
+}
+  
+
