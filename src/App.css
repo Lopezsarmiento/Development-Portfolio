@@ -64,8 +64,18 @@
   
 }
 
+#aboutDescription {
+  background-image: url(../src/img/aboutBground.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .jumbotron{
   height: 100vh;
+}
+#stack span {
+  font-size: 60px;
 }
   
 

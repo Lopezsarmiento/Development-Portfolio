@@ -18,11 +18,11 @@ class Projects extends Component {
 		const { title, projects } = this.state;
 		return (
 			<BrowserRouter>
-				<div className="container mt-5">
+				<div className="container mt-5 bg-transparent">
 					<div className="row">
 						{projects.map(project => (
 							<div key={project.id} className="col-md-6">
-								<div className="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+								<div className="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-light">
 									<div className="col-md-8 p-4 d-flex flex-column position-static">
 										<strong className="d-inline-block mb-2 text-primary">{project.name}</strong>
 										<h3 className="mb-0">Featured Post</h3>

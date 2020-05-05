@@ -37,7 +37,7 @@ class Contact extends Component {
     return (
       <div className="container mt-5">
         <div className="row">
-          <div className="shadow col-md-6">
+          <div className="shadow col-md-6 bg-light">
             <form className="mt-2">
               <h3>Email me</h3>
               <div className="form-group mt-3">
@@ -55,12 +55,12 @@ class Contact extends Component {
               <button className="btn btn-primary mb-5" type="submit">Send</button>
             </form>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 shadow bg-light">
             <Map></Map>
           </div>
         </div>
         <div className="row mt-3">
-          <div id="socialMedia" className="shadow col-md-12">
+          <div id="socialMedia" className="shadow col-md-12 bg-light">
             <h4>Or Follow me on</h4>
             <SocialMedia></SocialMedia>
           </div>

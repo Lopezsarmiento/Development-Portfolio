@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <div>
+        <div id="aboutDescription">
           <NavBar></NavBar>
           <main role="main">
             <Switch>
