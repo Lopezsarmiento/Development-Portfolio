@@ -7,7 +7,7 @@ class Home extends Component {
   }
   render() {
     return (
-      <div className="jumbotron bg-image text-white">
+      <div className="fullHeight jumbotron p-3 p-md-5 text-white rounded bg-home mt-2">
         <div className="container text-right">
           <div className="row">
             <div className="col-md-4"></div>

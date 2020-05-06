@@ -23,7 +23,7 @@ class NavBar extends Component {
 		const classTwo = collapsed ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler navbar-toggler-right';
 
 		return (
-			<nav className="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+			<nav className="navbar navbar-expand-lg sticky-top navbar-light bg-light border-bottom border-warning">
 				<Link className="navbar-brand text-muted text-monospace" to="/">{brand}</Link>
 				<button onClick={this.toggleNavbar} className={classTwo} type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span className="navbar-toggler-icon"></span>
