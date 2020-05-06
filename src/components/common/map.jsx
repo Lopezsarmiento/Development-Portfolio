@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-class Map extends Component {
+class Maps extends Component {
   state = {}
   render() {
     return (
-      <div className="container">
+      <div className="">
         <div className="row">
           <div id="mapContainer" ref={el => this.mapContainer = el} className="mapContainer" />
         </div>
@@ -13,4 +13,4 @@ class Map extends Component {
   }
 }
 
-export default Map;
+export default Maps;

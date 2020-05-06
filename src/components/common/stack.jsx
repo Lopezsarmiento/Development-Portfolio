@@ -18,9 +18,9 @@ class Stack extends Component {
     const { items } = this.state;
     return (
       <div className="nav-scroller">
-        <nav id="stack" className="nav d-flex justify-content-between">
+        <nav className="nav d-flex justify-content-between">
           {items.map(item => (
-            <p key={item.id} className="p-2 text-muted">
+            <p key={item.id} className="stack">
               <span><i className={item.icon} aria-hidden="true"></i></span>
             </p>
           ))}

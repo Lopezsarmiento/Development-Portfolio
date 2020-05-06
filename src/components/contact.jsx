@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import mapboxgl from 'mapbox-gl';
 import { Link } from 'react-router-dom';
-import Map from './common/map';
+import Maps from './common/map';
+import Form from './common/form';
 import SocialMedia from './common/socialMedia';
 
 class Contact extends Component {
@@ -11,7 +12,7 @@ class Contact extends Component {
       map: {
         lng: -58.439147,
         lat: -34.609245,
-        zoom: 9
+        zoom: 10
       }
     };
   }
@@ -29,8 +30,12 @@ class Contact extends Component {
       interactive: false
     });
 
+    const marker = new mapboxgl.Marker()
+      .setLngLat([lng, lat])
+      .addTo(map);
+
     // disable map zoom when using scroll
-    map.scrollZoom.disable();
+    //map.scrollZoom.disable();
   }
 
   componentDidMount() {
@@ -39,11 +44,25 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="jumbotron full-height p-3 p-md-5 rounded bg-contact mt-2">
-        <div className="container-fluid text-right">
-          <div className="row">
-            <div className="col-md-12">
-              <Map></Map>
+      <div className="jumbotron p-3 p-md-5 rounded bg-contact mt-2">
+        <div className="">
+          <div className="row justify-content-between">
+            <div className="col-md-5 shadow-lg rounded">
+              <Maps></Maps>
+            </div>
+            <div className="col-md-6">
+              <div className="row">
+                <div className="col-md-12 shadow-lg rounded mb-2">
+                  <SocialMedia></SocialMedia>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-12 shadow-lg rounded">
+                  <Form></Form>
+                </div>
+              </div>
+
+
             </div>
           </div>
         </div>

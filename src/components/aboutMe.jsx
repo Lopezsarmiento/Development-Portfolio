@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Stack from './common/stack';
 
 class AboutMe extends Component {
   state = {}
@@ -19,6 +20,14 @@ class AboutMe extends Component {
                   <span className="text-monospace font-italic">I am always seeking for new challenges and experiences.</span>
                 </p>
               </div>
+            </div>
+            <div className="col-md-4">
+
+            </div>
+          </div>
+          <div className="row mt-3 shadow-lg rounded">
+            <div className="col-md-12">
+              <Stack></Stack>
             </div>
           </div>
         </div>

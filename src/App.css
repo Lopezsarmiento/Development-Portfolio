@@ -52,10 +52,6 @@
   bottom: 0;
 }
 
-#socialMedia {
-  margin-bottom: 20px;
-}
-
 .bg-home {
   background-image: url(../src/img/homeBground.jpg);
   background-position: center center;
@@ -88,8 +84,12 @@
 .fullHeight{
   height: 100vh;
 }
-#stack span {
-  font-size: 60px;
+
+.stack span {
+  font-size: 40px;
 }
-  
+
+.socialIcons {
+  font-size: 30px;
+}
 
