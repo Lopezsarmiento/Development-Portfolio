@@ -52,7 +52,7 @@ class Contact extends Component {
             </div>
             <div className="col-md-6">
               <div className="row">
-                <div className="col-md-12 shadow-lg rounded mb-2">
+                <div className="col-md-12 shadow-lg rounded mb-2 bg-transparent">
                   <SocialMedia></SocialMedia>
                 </div>
               </div>

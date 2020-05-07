@@ -9,16 +9,15 @@ class Stack extends Component {
       { id: 4, name: 'instagram', icon: 'devicon-react-original-wordmark colored' },
       { id: 5, name: 'instagram', icon: 'devicon-nodejs-plain colored' },
       { id: 6, name: 'instagram', icon: 'devicon-javascript-plain colored' },
-      { id: 7, name: 'instagram', icon: 'devicon-git-plain colored' },
-      { id: 8, name: 'instagram', icon: 'devicon-bootstrap-plain colored' }
+      { id: 7, name: 'instagram', icon: 'devicon-git-plain colored' }
     ]
   }
 
   render() {
     const { items } = this.state;
     return (
-      <div className="nav-scroller">
-        <nav className="nav d-flex justify-content-between">
+      <div className="nav-scroller container">
+        <nav className="nav d-flex justify-content-between bg-transparent">
           {items.map(item => (
             <p key={item.id} className="stack">
               <span><i className={item.icon} aria-hidden="true"></i></span>
