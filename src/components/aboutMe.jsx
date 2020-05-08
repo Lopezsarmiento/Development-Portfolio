@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Stack from './common/stack';
+import Picture from './common/picture';
 
 class AboutMe extends Component {
   state = {}
@@ -9,7 +10,7 @@ class AboutMe extends Component {
       <div className="jumbotron p-3 p-md-5 rounded bg-about mt-2">
         <div className="">
           <div className="row">
-            <div className="col-md-7 shadow-lg bg-transparent rounded mb-2">
+            <div className="col-md-8 shadow-lg bg-transparent rounded mb-2">
               <h3 className="mt-3">
                 Oh... Hello <i className="fa fa-hand-peace-o text-warning" aria-hidden="true"></i>
               </h3>
@@ -28,9 +29,10 @@ class AboutMe extends Component {
                 </div>
               </div>
             </div>
-            <aside className="col-md-5 blog-sidebar">
+            <aside className="col-md-4 blog-sidebar">
               <div className="p-4 mb-3 alert alert-warning rounded text-justify text-dark">
-                <h4 className="font-italic text-right">A bit more About me</h4>
+                <Picture></Picture>
+                <h4 className="font-italic text-center">A bit more About me</h4>
                 <hr></hr>
                 <p className="mb-0 neucha">Whenever I'm not in front of the computer, I love making <strong>argentinian asados and colombian arepas</strong> for my family and friends. I also practice <strong>Aikido</strong> which is a Martial Art originated in Japan.
                 At home I have a <strong>furry friend</strong> named Pepper, a big <strong>Golden retriever</strong> dog that <strong>goes crazy</strong> for tennis balls. <strong>Last but definitely not least</strong>: I have a <strong>gorgeous daughter</strong>. She was born in 2019, we named her <strong>Maite</strong> and she has become our <strong>day and night</strong>.</p>

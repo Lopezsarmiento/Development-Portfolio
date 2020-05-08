@@ -17,7 +17,7 @@ class SocialMedia extends Component {
       <div className="nav-scroller py-1 mb-2 container-fluid">
         <nav className="nav d-flex justify-content-between">
           {socials.map(social => (
-            <a key={social.id} className="p-2 text-dark font25" href="/"><i className={social.icon}></i></a>
+            <a key={social.id} className="p-2 text-dark font25" href={social.url} target="_blank" rel="noopener noreferrer"><i className={social.icon}></i></a>
           ))}
         </nav>
       </div>

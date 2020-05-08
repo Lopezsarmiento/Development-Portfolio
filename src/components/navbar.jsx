@@ -23,20 +23,20 @@ class NavBar extends Component {
 		const classTwo = collapsed ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler navbar-toggler-right';
 
 		return (
-			<nav className="navbar navbar-expand-lg sticky-top navbar-light bg-light border-bottom border-warning">
+			<nav className="navbar navbar-expand-lg sticky-top navbar-light bg-light border-bottom border-warning rounded mt-2">
 				<Link className="navbar-brand text-muted text-monospace" to="/">{brand}</Link>
 				<button onClick={this.toggleNavbar} className={classTwo} type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span className="navbar-toggler-icon"></span>
 				</button>
 				<div className={classOne} id="navbarNav">
 					<div className="navbar-nav text-monospace">
-						<Link onClick={this.toggleNavbar} className="nav-item nav-link active" to="/"><i className="fa fa-home" aria-hidden="true"></i> Home <span className="sr-only">(current)</span></Link>
-						<Link onClick={this.toggleNavbar} className="nav-item nav-link" to="/about"><i className="fa fa-address-card" aria-hidden="true"></i> About</Link>
-						<Link onClick={this.toggleNavbar} className="nav-item nav-link" to="/projects"><i className="fa fa-rocket" aria-hidden="true"></i> Projects</Link>
-						<Link onClick={this.toggleNavbar} className="nav-item nav-link" to="/contact"><i className="fa fa-commenting" aria-hidden="true"></i> Contact</Link>
+						<Link onClick={this.toggleNavbar} className="nav-item nav-link active" to="/"><i aria-hidden="true"></i> Home <span className="sr-only">(current)</span></Link>
+						<Link onClick={this.toggleNavbar} className="nav-item nav-link" to="/about"><i aria-hidden="true"></i> About</Link>
+						<Link onClick={this.toggleNavbar} className="nav-item nav-link" to="/projects"><i aria-hidden="true"></i> Projects</Link>
+						<Link onClick={this.toggleNavbar} className="nav-item nav-link" to="/contact"><i aria-hidden="true"></i> Contact</Link>
 					</div>
 				</div>
-			</nav>
+			</nav >
 		);
 	}
 }
