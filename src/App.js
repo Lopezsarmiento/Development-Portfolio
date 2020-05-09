@@ -7,6 +7,7 @@ import Projects from './components/projects';
 import Contact from './components/contact';
 import NotFound from './components/notFound';
 import AboutMe from './components/aboutMe';
+import Footer from './components/common/footer';
 
 class App extends Component {
 

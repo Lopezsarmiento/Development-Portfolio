@@ -24,7 +24,7 @@ class NavBar extends Component {
 
 		return (
 			<nav className="navbar navbar-expand-lg sticky-top navbar-light bg-light border-bottom border-warning rounded mt-2">
-				<Link className="navbar-brand text-muted text-monospace" to="/">{brand}</Link>
+				<Link className="navbar-brand neucha" to="/"><strong>{brand}</strong></Link>
 				<button onClick={this.toggleNavbar} className={classTwo} type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span className="navbar-toggler-icon"></span>
 				</button>
@@ -36,7 +36,7 @@ class NavBar extends Component {
 						<Link onClick={this.toggleNavbar} className="nav-item nav-link" to="/contact"><i aria-hidden="true"></i> Contact</Link>
 					</div>
 				</div>
-			</nav >
+			</nav>
 		);
 	}
 }
