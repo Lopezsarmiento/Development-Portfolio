@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import config from '../config.json';
 import { Link } from 'react-router-dom';
 import Footer from './common/footer';
 
@@ -13,13 +14,10 @@ class Projects extends Component {
 			{ id: 5, name: 'basic Js Games', desc: 'calling rest-api', stack: '' },
 			{ id: 6, name: 'etc', desc: 'calling rest-api', stack: '' }
 		],
-		photo: {
-			name: 'Rick Mason',
-			url: 'https://unsplash.com/@egnaro'
-		}
 	}
 	render() {
-		const { title, projects, photo } = this.state;
+		const { projects } = this.state;
+		const { name, url } = config.background.projects;
 		return (
 			<React.Fragment>
 				<div className="jumbotron p-3 p-md-5 rounded bg-projects mt-2">
@@ -29,11 +27,11 @@ class Projects extends Component {
 								<div key={item.id} className="col-md-6">
 									<div className="card flex-md-row mb-3 h-md-250 shadow-lg">
 										<div className="card-body d-flex flex-column align-items-start">
-											<strong className="d-inline-block mb-2 text-dark">#node #React #mongoDB #express</strong>
-											<hr></hr>
 											<h3 className="mb-0">{item.name}</h3>
 											<p className="card-text mb-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo deleniti non quos hic! Placeat autem.</p>
 											<Link to="/">Continue reading</Link>
+											<hr></hr>
+											<strong className="d-inline-block mb-2 text-dark">#node #React #mongoDB #express</strong>
 										</div>
 									</div>
 								</div>
@@ -42,8 +40,8 @@ class Projects extends Component {
 					</div>
 				</div>
 				<Footer
-					name={photo.name}
-					url={photo.url}
+					name={name}
+					url={url}
 				></Footer>
 			</React.Fragment>
 		);

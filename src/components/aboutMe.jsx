@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
+import config from '../config.json';
 import Stack from './common/stack';
 import Picture from './common/picture';
 import Footer from './common/footer';
 
 class AboutMe extends Component {
-  state = {
-    photo: {
-      name: 'Karl Pawlowicz',
-      url: 'https://unsplash.com/@karlp'
-    }
-  }
+  state = {}
 
   render() {
-    const { photo } = this.state;
+    const { name, url } = config.background.about;
     return (
       <React.Fragment>
         <div className="jumbotron p-3 p-md-5 rounded bg-about mt-2">
@@ -51,8 +47,8 @@ class AboutMe extends Component {
           </div>
         </div>
         <Footer
-          name={photo.name}
-          url={photo.url}
+          name={name}
+          url={url}
         ></Footer>
       </React.Fragment>
     );

@@ -1,0 +1,29 @@
+{
+  "background": {
+    "home": {
+      "name": "Tim Mossholder",
+      "url": "https://unsplash.com/@timmossholder"
+    },
+    "about": {
+      "name": "Karl Pawlowicz",
+      "url": "https://unsplash.com/@karlp"
+    },
+    "projects": {
+      "name": "Rick Mason",
+      "url": "https: //unsplash.com/@egnaro"
+    },
+    "contact": {
+      "name": "Rick Mason",
+      "url": "https://unsplash.com/@egnaro"
+    }
+  },
+  "mapConfig": {
+    "mapToken": "pk.eyJ1Ijoic3VtZXJjaXNjbyIsImEiOiJjazlweHgwNTgwZjdkM2ZvMzVxNjB4OGd5In0.SjymKPgGfwxFufghKST0gA",
+    "settings": {
+      "lng": -58.439147,
+      "lat": -34.609245,
+      "zoom": 10
+    },
+    "interactive": "false"
+  }
+}

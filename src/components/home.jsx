@@ -1,17 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import config from '../config.json';
 import Footer from './common/footer';
 
 class Home extends Component {
-  state = {
-    title: 'Home',
-    photo: {
-      name: 'Tim Mossholder',
-      url: 'https://unsplash.com/@timmossholder'
-    }
-  }
+  state = {}
   render() {
-    const { photo } = this.state;
+    const { name, url } = config.background.home;
     return (
       <React.Fragment>
         <div className="fullHeight jumbotron p-3 p-md-5 text-white rounded bg-home mt-2">
@@ -27,8 +22,8 @@ class Home extends Component {
           </div>
         </div>
         <Footer
-          name={photo.name}
-          url={photo.url}
+          name={name}
+          url={url}
         ></Footer>
       </React.Fragment>
     );
