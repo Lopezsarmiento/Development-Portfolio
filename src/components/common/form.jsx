@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import Social from './socialMedia';
 
 class Form extends Component {
   state = {}
+
+
   render() {
     return (
       <div className="">
@@ -20,7 +21,6 @@ class Form extends Component {
                 <textarea className="form-control form-control-sm alert alert-secondary text-white border-0" id="exampleFormControlTextarea1" rows="10" placeholder="Don't forget to write some lines.."></textarea>
               </div>
               <button type="button" className="btn btn-warning btn-lg btn-block ">Send</button>
-              <button type="button" className="btn btn-danger btn-sm btn-block">Press ONLY in case of emergency</button>
             </form>
           </div>
         </div>
