@@ -17,7 +17,6 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
 .bg-about {
@@ -41,8 +40,19 @@
   background-size: cover;
 }
 
-.fullHeight{
+.bg-notFound {
+  background-image: url("https://media.giphy.com/media/m12EDnP8xGLy8/giphy.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fullHeight {
   height: 100vh;
+}
+
+.midHeight {
+  height: 80vh;
 }
 
 .stack span {
@@ -59,7 +69,7 @@
 }
 
 .neucha {
-  font-family: 'Neucha', cursive;
+  font-family: "Neucha", cursive;
   font-size: 18px;
 }
 
@@ -71,5 +81,10 @@
   max-width: 18rem;
 }
 
+.notFound {
+  color: floralwhite;
+}
 
-
+.largeFont {
+  font-size: 1000%;
+}

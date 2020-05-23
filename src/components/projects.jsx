@@ -7,12 +7,12 @@ class Projects extends Component {
 	state = {
 		title: 'Projects',
 		projects: [
-			{ id: 1, name: 'api', desc: 'calling rest-api', stack: '' },
-			{ id: 2, name: 'server', desc: 'calling rest-api', stack: '' },
-			{ id: 3, name: 'bot', desc: 'calling rest-api', stack: '' },
-			{ id: 4, name: 'webscrapping', desc: 'calling rest-api', stack: '' },
-			{ id: 5, name: 'basic Js Games', desc: 'calling rest-api', stack: '' },
-			{ id: 6, name: 'etc', desc: 'calling rest-api', stack: '' }
+			{ id: 1, name: 'api', desc: 'calling rest-api', stack: '', path: '' },
+			{ id: 2, name: 'server', desc: 'calling rest-api', stack: '', path: '' },
+			{ id: 3, name: 'bot', desc: 'calling rest-api', stack: '', path: '' },
+			{ id: 4, name: 'webscrapping', desc: 'calling rest-api', stack: '', path: '' },
+			{ id: 5, name: 'JavaScript Games', desc: 'calling rest-api', stack: '', path: '' },
+			{ id: 6, name: 'etc', desc: 'calling rest-api', stack: '', path: '' }
 		],
 	}
 	render() {
