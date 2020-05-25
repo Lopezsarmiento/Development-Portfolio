@@ -25,5 +25,8 @@
       "zoom": 10
     },
     "interactive": "false"
+  },
+  "giphy": {
+    "key": "zprwFkZ79ssyFFPpU4FDdkLYcC4JdQJQ"
   }
 }
